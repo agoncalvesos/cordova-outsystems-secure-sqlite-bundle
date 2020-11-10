@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-fluor-sqlcipher" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>fluor-sqlcipher</name>
+    <js-module name="fluor-sqlcipher" src="www/fluor-sqlcipher.js">
+        <clobbers target="cordova.plugins.fluorSqlcipher" />
+    </js-module>
+
+    <dependency id="cordova-sqlcipher-adapter" url="https://github.com/OutSystems/cordova-sqlcipher-adapter.git" commit="0.1.7-OS5" />
+</plugin>

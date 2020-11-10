@@ -1,0 +1,14 @@
+{
+  "name": "com-fluor-sqlcipher",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "com-fluor-sqlcipher",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC"
+}
