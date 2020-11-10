@@ -6,4 +6,9 @@
     </js-module>
 
     <dependency id="cordova-sqlcipher-adapter" url="https://github.com/OutSystems/cordova-sqlcipher-adapter.git" commit="0.1.7-OS5" />
+
+    <engines>
+        <engine name="cordova" version=">=6.4.0"/>
+        <engine name="cordova-android" version=">=6.0.0"/>
+    </engines>
 </plugin>
