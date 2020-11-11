@@ -1,6 +1,6 @@
 var originalOpenDatabase = window.sqlitePlugin.openDatabase;
 
-function initializeCipheredDatabase(key, successCallback, errorCallback) {
+function initializeCipheredDatabase(key, options, successCallback, errorCallback) {
     var newOptions = {};
     for (var prop in options) {
         if (options.hasOwnProperty(prop)) {
@@ -67,7 +67,7 @@ function openInAppbrowser(successCallback){
  */
 window.sqlitePlugin.openDatabase = function(options, successCallback, errorCallback) {
     return openInAppbrowser(function(key){
-        return initializeCipheredDatabase(key, successCallback, errorCallback)
+        return initializeCipheredDatabase(key, options, successCallback, errorCallback)
     });
  };
 
