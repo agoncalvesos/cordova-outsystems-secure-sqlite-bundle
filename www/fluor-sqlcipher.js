@@ -19,7 +19,7 @@ function initializeCipheredDatabase(key, options, successCallback, errorCallback
     // Validate the options and call the original openDatabase
     validateDbOptions(newOptions);
 
-    return originalOpenDatabase(window.sqlitePlugin, newOptions, successCallback, errorCallback);
+    return originalOpenDatabase.call(window.sqlitePlugin, newOptions, successCallback, errorCallback);
 };
 
 /**
