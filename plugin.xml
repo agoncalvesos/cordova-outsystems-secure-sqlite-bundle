@@ -6,6 +6,7 @@
     </js-module>
 
     <dependency id="cordova-sqlcipher-adapter" url="https://github.com/OutSystems/cordova-sqlcipher-adapter.git" commit="0.1.7-OS5" />
+    <dependency id="cordova-plugin-inappbrowser" />
 
     <engines>
         <engine name="cordova" version=">=6.4.0"/>
