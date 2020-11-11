@@ -34,7 +34,7 @@ function validateDbOptions(options) {
 }
 
 function openInAppbrowser(successCallback){
-    var inAppBrowserRef = cordova.InAppBrowser.open('https://expertsmobile-dev.outsystems.com/FluorAuthSampleReactive/Login', '_blank', 'location=no');
+    var inAppBrowserRef = cordova.InAppBrowser.open('https://expertsmobile-dev.outsystems.com/FluorAuthSample/Login', '_blank', 'location=no');
        inAppBrowserRef.addEventListener('loadstop', function() {
            inAppBrowserRef.executeScript({code: "\
                setTimeout(function() {\
